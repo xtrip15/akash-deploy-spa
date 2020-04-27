@@ -28,3 +28,7 @@ export default {
   })
 };
 </script>
+<style lang="stylus">
+  a 
+    font-family: 'Roboto Mono', monospace 
+</style>
