@@ -1,28 +1,30 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app>
+    <v-app-bar app color="primary" dark>
+      <router-link :to="{name:'index'}" style="text-decoration: none;" class="white--text">
+        <h2>Aero2Speed</h2>
+      </router-link>
+      <v-icon large>mdi-airplane-takeoff</v-icon>
+      <v-spacer></v-spacer>
+      <router-link :to="{name:'assembly'}" style="text-decoration: none;" class="white--text">
+          <h4>Assembly</h4>
+      </router-link>
+    </v-app-bar>
+
+    <v-content>
+      <router-view />
+    </v-content>
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
-</script>
+  name: "App",
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+  components: {},
+
+  data: () => ({
+    //
+  })
+};
+</script>
