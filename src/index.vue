@@ -13,9 +13,14 @@
         )
           v-carousel-item(v-for="item in pics" :src="item.img")
       br
-      br
+      p(class="text-center") All drawings and blueprints are available to use free of charge.
       p.heading
-        router-link(:to="{name: 'assembly'}" title="assembly") View Plane Assembly Parts
+        v-btn(color="primary" style="margin:5px" height="50" :to="{name:'assembly'}")
+          v-icon mdi-tools 
+          span.d-none.d-sm-inline.ml-2.font-weight-bold View Assembly Parts
+        v-btn(color="primary" style="margin:5px"  height="50"  href="blueprint.pdf")
+          v-icon mdi-download 
+          span.d-none.d-sm-inline.ml-2.font-weight-bold DOWNLOAD<br/>BLUEPRINTS
       p
         div.about I built this airplane to research and fly an auto engine with a two speed transmission. The loose of my first experimental plane motivated me to use an auto engine. I had built a Quickie 200 with a Continental O-200 engine. This engine failed in flight. I was never able to rebuild the plane to safe standards. The engine had been rebuilt by one of the most reputable certified rebuilders. I then purchased a Cessna 172. I wanted to have this rebuilt to FAA standards but it had a crack in the crankshaft. I lost all confidence in the air cooled engine design. I have driven many cars and never had such bad luck, EXCEPT WITH A VOLKSWAGEN THAT BROKE THE CRANKSHAFT. The range of temperatures in all air-cooled engines is much larger than a water cooled engine. Water cooled engines can be built with much closer tolerances than air cooled thus water cooled engines are more reliable. 
       p 

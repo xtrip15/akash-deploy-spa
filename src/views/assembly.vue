@@ -14,7 +14,7 @@
       v-dialog(v-model="dialog" :max-width="image.width" aspect-ratio="1" class="grey lighten-2")
         v-card(flat tile)
           v-row(align="center" justify="center")
-            v-card-title(:class="{'pb-0':dense}").d-block.pics-heading {{image.title}}
+            v-card-title(:class="'pb-0'").d-block.pics-heading {{image.title}}
             v-img(:src="image.src" :max-width="image.width*.95") 
           br
           v-card-text().pics-content {{image.description}}
