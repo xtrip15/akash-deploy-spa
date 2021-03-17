@@ -152,7 +152,7 @@ That's it, you should see a return output with uri. And you are ready to roll!
 
 ### Step 7 - Updating Image Code
 
-This is something I could not find easily but the guys at discord were super helpful. As would happen, there will be changes to image and code will need an update. To do so:
+As would happen, there will be changes to image and code will need an update. To do so:
 
 1) Build new docker image, tag it to new version and push it to dockerhub. Then update deploy.yml to reference the updated dockerhub version.
 
