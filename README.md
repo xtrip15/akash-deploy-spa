@@ -131,22 +131,24 @@ akash \
 
 ### Step 5 - Create deploy.yml file
 
-Add deploy.yml to your project. Again, you can just copy the deploy.yml template from Akash guide (https://docs.akash.network/guides/deploy)
+Add deploy.yml to your project. You can just copy the deploy.yml template from Akash guide (https://docs.akash.network/guides/deploy)
 
 Just make sure, you update the image reference to your dockerhub image name and the port # that you are exposing in your Dockerfile.
 
 ### Step 6 - Create deployment in Akash
 
-Again, reference their deployment guide: (https://docs.akash.network/guides/deploy)
+Finally, to deploy in akash. 
 
+1) Create certificate
 ```
-## Create certificate
 akash tx cert create client --chain-id $AKASH_CHAIN_ID --keyring-backend $KEYRING_BACKEND --from $KEY_NAME --node $AKASH_NODE --fees 5000uakt
 ```
-And finally, deploy to Akash
+2) Deploy to akash
 ```
 akash deploy create deploy.yml --from $KEY_NAME --chain-id $AKASH_CHAIN_ID --keyring-backend $KEYRING_BACKEND --node $AKASH_NODE --fees 5000uakt
 ```
+
+That's it, you should see a return output with uri. And you are ready to roll!
 
 ### Step 7 - Updating Image Code
 
@@ -173,4 +175,12 @@ It takes about a minute(or less) before provider swaps to the new manifest.
 
 That's about it, i think. Guys at discord are super nice, visit them if you have questions. (https://discord.com/channels/747885925232672829/771909909335506955)
 
+### Next steps:
+
+1) Add hostname so you can forward your custom domain to the uri.
+2) SSL site - I plan to install letsencrypt-certbot on the docker image
+
+### Closing remarks
+
+If you already have your project setup with docker, the work is minimal to move it to Akash. Otherwise there is bit of setting up with docker but if you are familiar with docker, then its fairly straightfoward.
 
