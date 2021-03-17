@@ -1,6 +1,6 @@
 # aero2speed - A step-by-step guide to deploying a SPA to Akash Network
 
-Here we will be deploying a simple single page web app (http://tuock5c14lbs9bhrg35rrpshdg.ingress.sjc1p0.mainnet.akashian.io/#/) on Akash network. This project is built using VueJs but the basic steps will remain same regardless of your SPA choice - Angular, React or even static HTMl site.
+Here we will be deploying a simple single page web app (http://46dm1lfgb9cvf59iv86gcb4v4s.ingress.sjc1p0.mainnet.akashian.io/#/) on Akash network. This project is built using VueJs but the basic steps will remain same regardless of your SPA choice - Angular, React or even static HTMl site.
 
 ## Prerequisites
 
